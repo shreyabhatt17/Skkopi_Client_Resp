@@ -1,0 +1,33 @@
+/* You can add global styles to this file, and also import other style files */
+
+
+@import url('https://fonts.googleapis.com/css?family=Poppins&display=swap');
+// Core variables and mixins
+@import "./sass/variables.scss";
+@import "./sass/mixins.scss";
+@import "./sass/extends.scss";
+
+// Global CSS
+@import "./sass/global.scss";
+
+// Header CSS
+@import "./sass/masterhead.scss";
+
+// Navbar CSS
+@import "./sass/navbar.scss";
+
+// Content CSS
+@import "./sass/content.scss";
+
+// Banner CSS
+@import "./sass/banner.scss";
+
+// Themes Colors CSS
+@import "./sass/themes.scss";
+
+@import "~@angular/material/prebuilt-themes/indigo-pink.css";
+// Footer CSS
+@import "./sass/footer.scss";
+
+
+

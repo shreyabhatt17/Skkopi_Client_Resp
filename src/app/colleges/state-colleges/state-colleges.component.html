@@ -1,0 +1,276 @@
+<div class="container main-content">
+
+
+  <div class="categories">
+    <!-- Nav tabs -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="category1-tab" data-toggle="tab" href="#category1" role="tab"
+          aria-controls="category1" aria-selected="true">Government</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category2-tab" data-toggle="tab" href="#category2" role="tab" aria-controls="category2"
+          aria-selected="false">Private</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category3-tab" data-toggle="tab" href="#category3" role="tab" aria-controls="category3"
+          aria-selected="false">Deemed</a>
+      </li>
+
+    </ul>
+
+    <!-- Tab panes -->
+    <div class="tab-content container">
+      <div class="tab-pane active" id="category1" role="tabpanel" aria-labelledby="category1-tab">
+        <div class="card-lists">
+
+          <!-- <div class="card card-details" routerLink="/main-university" routerLinkActive="active" *ngFor="let stateUniversitiesList of stateUuniveristyData"> -->
+
+          <div class="card card-details" (click)="viewMainData(scd._id, scd.address.state)" routerLinkActive="active"
+            *ngFor="let scd of stateCollegeData">
+
+            <!-- <p>{{ stateUniversitiesList._id }}</p> -->
+
+            <div class="card-top">
+              <img [src]="scd.logo.url" alt="{{ scd.basicInfo.name }}" class="img-responsive">
+              <div class="overlay"></div>
+            </div>
+            <div class="card-middle">
+              <img [src]="scd.logo.url" alt="{{ scd.basicInfo.name }}" class="img-responsive">
+              <div class="college-info">
+                <div class="college-details">{{ scd.basicInfo.name }}</div>
+                <div class="college-address">{{ scd.address.city }},
+                  {{ scd.address.state }} </div>
+              </div>
+            </div>
+
+          </div>
+
+          <!-- <div class="card card-details" (click)="viewMainData(stateUniversitiesList.address.state)" routerLinkActive="active" *ngFor="let stateUniversitiesList of stateUniveristyData">
+
+  <div class="card-top">
+    <img [src]="stateUniversitiesList.logo"  alt="{{ stateUniversitiesList.basicInfo.name }}"   class="img-responsive">
+    <div class="overlay"></div>
+  </div>  
+  <div class="card-middle">
+    <img [src]="stateUniversitiesList.logo"  alt="{{ stateUniversitiesList.basicInfo.name }}"   class="img-responsive">
+    <div class="college-info">
+    <div class="college-details">{{ stateUniversitiesList.basicInfo.name }}</div>
+    <div class="college-address">{{ stateUniversitiesList.address.city }}, {{ stateUniversitiesList.address.state }} </div>
+    </div>
+  </div>
+
+</div> -->
+        </div>
+
+      </div>
+      <div class="tab-pane" id="category2" role="tabpanel" aria-labelledby="category2-tab">
+        <ul class="card-layout">
+
+          <li>
+            <button type="button" class="btn btn-primary">
+              Play Schools <span class="badge badge-light">4</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              CBSE <span class="badge badge-light">12</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              ICSE<span class="badge badge-light">6</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              State <span class="badge badge-light">9</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Special Schools <span class="badge badge-light">2</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Govt Schools <span class="badge badge-light">7</span>
+            </button>
+
+          </li>
+
+
+        </ul>
+      </div>
+      <div class="tab-pane" id="category3" role="tabpanel" aria-labelledby="category3-tab">
+        <ul class="card-layout">
+
+
+          <li>
+            <button type="button" class="btn btn-primary">
+              Andhra Pradesh <span class="badge badge-light">4</span>
+            </button>
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Karnataka <span class="badge badge-light">12</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Telangana<span class="badge badge-light">6</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Maharashtra <span class="badge badge-light">9</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Madhya Pradesh <span class="badge badge-light">2</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Bihar <span class="badge badge-light">7</span>
+            </button>
+
+          </li>
+
+          <li>
+            <button type="button" class="btn btn-primary">
+              Uttar Pradesh <span class="badge badge-light">8</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              West Bengal <span class="badge badge-light">2</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              kerala <span class="badge badge-light">6</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Jammu&Kashmir <span class="badge badge-light">9</span>
+            </button>
+
+          </li>
+          <li>
+            <button type="button" class="btn btn-primary">
+              Himachal Pradesh <span class="badge badge-light">24</span>
+            </button>
+
+          </li>
+
+        </ul>
+      </div>
+      <div class="tab-pane" id="category4" role="tabpanel" aria-labelledby="category4-tab">
+
+        <div class="alert alert-danger text-center" role="alert">
+          This category will be coming soon!
+        </div>
+        <!--  <ul>
+      <li>
+        <img src="../assets/images/categories/category1.png" width="30" height="30"><br/>
+        <label>c4item1</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category2.png" width="30" height="30"><br/>
+        <label>c4item2</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category3.png" width="30" height="30"><br/>
+        <label>c4item3</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category4.png" width="30" height="30"><br/>
+        <label>c4item4</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category5.png" width="30" height="30"><br/>
+        <label>c4item5</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category5.png" width="30" height="30"><br/>
+        <label>c1item6</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category5.png" width="30" height="30"><br/>
+        <label>c4item7</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category1.png" width="30" height="30"><br/>
+        <label>c4item8</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category5.png" width="30" height="30"><br/>
+        <label>c4item9</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category1.png" width="30" height="30"><br/>
+        <label>c4item10</label>
+      </li>
+  </ul>
+ -->
+      </div>
+      <div class="tab-pane" id="category5" role="tabpanel" aria-labelledby="category5-tab">
+        <div class="alert alert-danger text-center" role="alert">
+          This category will be coming soon!
+        </div>
+        <!--  <ul>
+      <li>
+        <img src="../assets/images/categories/category1.png" width="30" height="30"><br/>
+        <label>c5item1</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category2.png" width="30" height="30"><br/>
+        <label>c5item2</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category3.png" width="30" height="30"><br/>
+        <label>c5item3</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category4.png" width="30" height="30"><br/>
+        <label>c5item4</label>
+      </li>
+      <li>
+        <img src="../assets/images/categories/category5.png" width="30" height="30"><br/>
+        <label>c5item5</label>
+      </li>
+      
+  </ul> -->
+      </div>
+    </div>
+  </div>
+</div>
+
+
+<div class="premium-ads">
+  <div class="row white-box premium-ad1">
+    <img src="../../assets//images/sliderbanners/pp2.png" alt="Premiun Ad1">
+  </div>
+  <div class="row white-box white-second-box col-no-padding">
+    <div class="row white-box premium-ad2 col-sm">
+      <img src="../../assets//images/sliderbanners/pp1.png" alt="Premiun Ad2">
+    </div>
+    <div class="row white-box premium-ad3 col-sm">
+      <img src="../../assets//images/sliderbanners/pp3.png" alt="Premiun Ad3">
+    </div>
+  </div>
+</div>

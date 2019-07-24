@@ -1,0 +1,88 @@
+<div class="container-fluid main-content">
+  <h5>Colleges</h5>
+  <div class="main-search-banner">
+
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+        <li data-target="#myCarousel" data-slide-to="1"></li>
+        <li data-target="#myCarousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img class="first-slide" src="../assets/images/sliderbanners/banner8.jpg" alt="First slide">
+        </div>
+        <div class="carousel-item">
+          <img class="second-slide" src="../assets/images/sliderbanners/banner8.jpg" alt="Second slide">
+
+        </div>
+        <div class="carousel-item">
+          <img class="third-slide" src="../assets/images/sliderbanners/banner8.jpg" alt="Third slide">
+        </div>
+      </div>
+
+    </div>
+
+    <div class="form container mainSearch carousel-caption">
+      <div>
+        <div class="row form-inline">
+          <select class="form-control">
+            <option>Select State</option>
+            <option *ngFor="let states of statesList">{{states}}</option>
+          </select>
+          <select class="form-control">
+            <option>Select City</option>
+            <option *ngFor="let cities of citiesList">{{cities}}</option>
+          </select>
+          <input class="form-control" type="text" placeholder="Search" aria-label="Search">
+
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="tab-content container">
+    <div class="row">
+      <div class="col-md-9 white-box d-block block-container">
+        <h5>Bachelor of Technology courses in India | Engineering courses after class 12th</h5>
+        <p>There are 195 courses which belong to Bachelor of Technology(BE/B.Tech) and which a person is eligible to
+          pursue after Class 12th. They can get admission in all the affiliated Universities spread across the states of
+          Delhi, Maharashtra, Tamil Nadu, Andhra Pradesh, Telangana, Punjab, Madhya Pradesh, Gujarat, etc. 22355
+          Colleges offer BE/B.Tech. For top BE/B.Tech colleges in India</p>
+
+        <div class="white-box d-block" routerLink="/course-overview">
+          <h6>Bachelor of Engineering [BE] (CHEMICAL ENGINEERING)</h6>
+          <p><label>4 Years</label> <span>Full Time</span></p>
+        </div>
+
+        <div class="white-box d-block" routerLink="/course-overview">
+          <h6>Bachelor of Technology [BTECH] (CIVIL ENGINEERING)</h6>
+          <p><label>4 Years</label> <span>Full Time</span></p>
+        </div>
+
+        <div class="white-box d-block" routerLink="/course-overview">
+          <h6>Bachelor of Engineering [BE] (AERONAUTICAL ENGINEERING)</h6>
+          <p><label>4 Years</label> <span>Full Time</span></p>
+        </div>
+
+
+
+      </div>
+
+
+      <div class="col-md-3 ads-container">
+        <div class="row white-box premium-ad1">
+          <img src="../assets/images/sliderbanners/banner8.jpg" alt="Premiun Ad1">
+        </div>
+        <div class="row white-box premium-ad1">
+          <img src="../assets/images/sliderbanners/banner8.jpg" alt="Premiun Ad1">
+        </div>
+        <div class="row white-box premium-ad1">
+          <img src="../assets/images/sliderbanners/banner8.jpg" alt="Premiun Ad1">
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

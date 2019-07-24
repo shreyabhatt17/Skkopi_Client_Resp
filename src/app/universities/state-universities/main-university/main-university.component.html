@@ -1,0 +1,805 @@
+<div class="main-content">
+
+  <div class="card-lists">
+
+    <div class="card card-details card-block-details" routerLinkActive="active" *ngIf="this.universityData">
+
+      <!-- <p>Id: {{this.universityData.basicInfo.name}} </p>  -->
+
+      <div class="card-top">
+        <img src="this.universityData.logo.url" alt="{{this.universityData.basicInfo.name}}"
+          class="img-responsive bigImage">
+        <div class="overlay"></div>
+      </div>
+      <div class="card-middle">
+        <img [src]="this.universityData.logo.url" alt="{{this.universityData.basicInfo.name}}" class="img-responsive">
+        <div class="college-info">
+          <div class="college-details">
+            <h3>{{this.universityData.basicInfo.name}}</h3>
+          </div>
+          <div class="college-address">
+            <h6>{{this.universityData.address.city}}</h6>
+          </div>
+        </div>
+      </div>
+
+
+    </div>
+  </div>
+
+
+
+
+
+  <div class="topCategoryLinks whiteBox">
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="category1-tab" data-toggle="tab" href="#category1" role="tab"
+          aria-controls="category1" aria-selected="true">info</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category2-tab" data-toggle="tab" href="#category2" role="tab" aria-controls="category2"
+          aria-selected="false">Course Fee</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category3-tab" data-toggle="tab" href="#category3" role="tab" aria-controls="category3"
+          aria-selected="false">Admission</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category4-tab" data-toggle="tab" href="#category4" role="tab" aria-controls="category4"
+          aria-selected="false">Placements</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category5-tab" data-toggle="tab" href="#category5" role="tab" aria-controls="category5"
+          aria-selected="false">Faculty</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category6-tab" data-toggle="tab" href="#category6" role="tab" aria-controls="category6"
+          aria-selected="false">Scholorship</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="category7-tab" data-toggle="tab" href="#category7" role="tab" aria-controls="category7"
+          aria-selected="false">Reviews</a>
+      </li>
+    </ul>
+
+  </div>
+  <div class="container-fluid">
+
+
+    <div class="row">
+     
+      <div class="col-md-12 col-sm-12">
+        <!-- Tab panes -->
+        <div class="tab-content data-container">
+
+          <!-- info Tab panes -->
+          <div class="tab-pane active" id="category1" role="tabpanel" aria-labelledby="category1-tab">
+
+            <div class="about-container white-box" style="justify-content: left;">
+              <p>In the early 1920s, to serve the downtrodden and to promote Tamil Literature, Rajah Sir S. R. M.
+                Annamalai Chettiar founded Sri Minakshi College, Sri Minakshi Tamil College and Sri Minakshi Sanskrit
+                College in a rural setup at Chidambaram. In 1928, Rajah Sir S. R. M. Annamalai Chettiar agreed with the
+                local Government to handover the above said institution for establishing a University. Thus, on
+                01.01.1929 Annamalai University was established as per Annamalai University Act 1928 (Tamil Nadu Act 1
+                of 1929).</p>
+            </div>
+
+            <div class="affiliated-links white-box mid-links-container">
+              <span class="flag-first">explore affilate colleges</span>
+
+              <a *ngFor="let affiliatedCollege of this.affiliatedColleges">
+                <span>Annamacharya college of Engineering</span>
+              </a>
+
+            </div>
+
+            <div class="affiliated-links white-box mid-links-container facilities">
+              <div class="title">
+                <span>facilities</span>
+              </div>
+
+              <ul>
+                <li>
+                  <a>
+                    <span><i class="fa fa-hotel"></i> Hostel</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-users"></i> Faculty</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-briefcase "></i> Placements</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-hotel"></i> Hostel</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-users"></i> Faculty</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-briefcase "></i> Placements</span>
+                  </a>
+                </li>
+                <li>
+                  <a>
+                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
+                  </a>
+                </li>
+
+              </ul>
+
+            </div>
+
+            <div class="gallery white-box mid-links-container">
+              <div class="title">
+                <span>gallery</span>
+              </div>
+
+              <div class="row">
+                <div class="col-md-4 col-sm-4">
+                  <div class="glry-img-block">
+                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="glry-img-block">
+                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-4">
+                  <div class="glry-img-block">
+                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
+                  </div>
+                </div>
+              </div>
+
+            </div>
+
+            <div class="gallery white-box mid-links-container">
+              <div class="title">
+                <span>About Location</span>
+              </div>
+
+              <div class="location-container">
+                <div class="col-12 loc-content-container">
+
+                  <ul>
+                    <li><label>area</label><span>{{this.universityData.address.area}}</span></li>
+                    <li>
+                      <label>transportation</label><span>{{this.universityData.facilities.transport === true ? 'Yes' : 'No'}}</span>
+                    </li>
+                    <li><label>located in</label><span>{{this.universityData.address.locatedIn}}</span></li>
+                    <li><label>distance from</label><span>{{this.universityData.address.district}}</span></li>
+                    <li><label>kms</label><span>{{this.universityData.address.kilometres}}</span></li>
+                    <li><label>pincode</label><span>{{this.universityData.address.pin}}</span></li>
+                    <li><label>town</label><span>{{this.universityData.address.city}}</span></li>
+                    <li><label>district</label><span>{{this.universityData.address.district}}</span></li>
+                    <li><label>city</label><span>{{this.universityData.address.city}}</span></li>
+                    <li><label>state</label><span>{{this.universityData.address.state}}</span></li>
+                    <li><label>country</label><span>{{this.universityData.address.country}}</span></li>
+                    <li><label>bus stand /
+                        stop</label><span>{{this.universityData.facilities.busStation === true ? 'Yes' : 'No'}}</span>
+                    </li>
+                    <li>
+                      <label>airport</label><span>{{this.universityData.facilities.airport === true ? 'Yes' : 'No'}}</span>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+
+
+            </div>
+
+
+          </div>
+          <!-- info Tab panes -->
+
+          <!-- Course Fee Tab panes -->
+          <div class="tab-pane tabs-container" id="category2" role="tabpanel" aria-labelledby="category2-tab">
+   <div class="tabbable tabs-left" id="category2" role="tabpanel" aria-labelledby="category2-tab">
+   
+              <div class="row">
+                <div class="col-md-3 col-sm-4">
+                  <ul class="nav nav-tabs" role="tablist">
+                    <li *ngFor="let tab of tabs; let first = first;" [ngClass]="{firstItem: first}" role="presentation"
+                      class="accounts_li" [class.active]="selectedtab === tab">
+                      <a (click)="selectedtab = tab" aria-controls="0" role="tab" data-toggle="tab">{{tab}}</a>
+                    </li>
+                  </ul>
+                </div>
+                <div class="col-md-9 col-sm-8">
+                  <div class="table-block">
+                  <div class="tab-content" *ngFor="let tab of tabs;let i = index">
+                    <div class="table table-responsive">
+                      <table class="table-bordered">
+                        <thead *ngIf="selectedtab === tabs[i]" role="tabpanel" id="{{i}}">
+                        <tr>
+                          <th>Stream</th>
+                          <th>Duration</th>
+                          <th>Semesters</th>
+                          <th>intake</th>
+                          <th>Year1</th>
+                          <th>Year2</th>
+                          <th>Year3</th>
+                          <th>Year4</th>
+                          <th>Total</th>
+                        </tr>
+                      </thead>
+                      <tbody *ngFor="let stream of this.courseDetails[i].streams">
+                        <tr>
+                          <td>{{stream.name}}</td>
+                          <td>{{stream.duration}}</td>
+                          <td>{{stream.semester}}</td>
+                          <td>{{stream.intake}}</td>
+                          <td>{{stream.feeYearOne}}</td>
+                          <td>{{stream.feeYearTwo}}</td>
+                          <td>{{stream.feeYearThree}}</td>
+                          <td>{{stream.feeYearFour}}</td>
+                          <td>{{stream.totalFee}}</td>
+                        </tr>
+                      </tbody>
+                      </table>
+                    </div>
+                  </div>
+                </div>
+                  <!-- <div class="tab-content" *ngFor="let tab of tabs;let i = index">
+                    <div *ngIf="selectedtab === tabs[i]" role="tabpanel" class="tab-pane active" id="{{i}}">
+                      <div class="white-box d-block info-tabs table-info">
+                        <div class="row info-header">
+                          <div class="col-3">stream</div>
+                          <div class="col">duration</div>
+                          <div class="col">semesters</div>
+                          <div class="col">intake</div>
+                          <div class="col">Year1</div>
+                          <div class="col">Year2</div>
+                          <div class="col">Year3</div>
+                          <div class="col">Year4</div>
+                          <div class="col">Total</div>
+                        </div>
+                        <div class="row info-body" *ngFor="let stream of this.courseDetails[i].streams">
+                          <div class="col-3">{{stream.name}}</div>
+                          <div class="col">{{stream.duration}}</div>
+                          <div class="col">{{stream.semester}}</div>
+                          <div class="col">{{stream.intake}}</div>
+                          <div class="col">{{stream.feeYearOne}}</div>
+                          <div class="col">{{stream.feeYearTwo}}</div>
+                          <div class="col">{{stream.feeYearThree}}</div>
+                          <div class="col">{{stream.feeYearFour}}</div>
+                          <div class="col">{{stream.totalFee}}</div>
+                        </div>
+                      </div>
+                      <div class="white-box info-tabs col-12 d-block"
+                        *ngFor="let stream of this.courseDetails[i].streams">
+
+                        <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                            <thead>
+                              <tr>
+                                <th>stream</th>
+                                <th>duration</th>
+                                <th>semesters</th>
+                                <th>intake</th>
+                              </tr>
+                            </thead>
+                            <tbody>
+              
+                              <tr>
+                                <td>{{stream.name}}</td>
+                                <td>{{stream.duration}}</td>
+                                <td>{{stream.semester}}</td>
+                                <td>{{stream.intake}}</td>
+                              </tr>
+              
+                            </tbody>
+                          </table>
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                              <thead>
+                                <tr>
+                                  <th>Year1</th>
+                                  <th>Year2</th>
+                                  <th>Year3</th>
+                                  <th>Year4</th>
+                                  <th>Total</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                                <tr>
+                                  <td>{{stream.feeYearOne}}</td>
+                                  <td>{{stream.feeYearTwo}}</td>
+                                  <td>{{stream.feeYearThree}}</td>
+                                  <td>{{stream.feeYearFour}}</td>
+                                  <td>{{stream.totalFee}}</td>
+                                </tr>
+                
+                              </tbody>
+                            </table>
+
+
+
+                      </div>
+
+
+
+                    </div>
+
+
+
+
+
+
+
+
+                  </div> -->
+                </div>
+                </div>
+              </div>
+          
+
+          </div>
+          <!-- Course Fee Tab panes -->
+
+          <!-- Admission Tab panes -->
+          <div class="tab-pane tabs-left" id="category3" role="tabpanel" aria-labelledby="category3-tab">
+              <div class="row">
+                  <div class="col-md-3 col-sm-4">
+                    <ul class="nav nav-tabs" role="tablist">
+                      <li *ngFor="let tab of admtabs; let first = first;" [ngClass]="{firstItem: first}" role="presentation"
+                        class="accounts_li" [class.active]="selectedadmtab === tab">
+                        <a (click)="selectedadmtab = tab" aria-controls="0" role="tab" data-toggle="tab">{{tab}}</a>
+                      </li>
+                    </ul>
+                  </div>
+                  <div class="col-md-9 col-sm-8">
+                    <div class="table-block">
+                    <div class="tab-content" *ngFor="let tab of tabs;let i = index">
+                      <div class="table table-responsive">
+                        <table class="table-bordered">
+                          <thead *ngIf="selectedtab === tabs[i]" role="tabpanel" id="{{i}}">
+                          <tr>
+                            <th>Stream</th>
+                            <th>Duration</th>
+                            <th>Semesters</th>
+                            <th>intake</th>
+                            <th>Year1</th>
+                            <th>Year2</th>
+                            <th>Year3</th>
+                            <th>Year4</th>
+                            <th>Total</th>
+                          </tr>
+                        </thead>
+                        <tbody *ngFor="let stream of this.courseDetails[i].streams">
+                          <tr>
+                            <td>{{stream.name}}</td>
+                            <td>{{stream.duration}}</td>
+                            <td>{{stream.semester}}</td>
+                            <td>{{stream.intake}}</td>
+                            <td>{{stream.feeYearOne}}</td>
+                            <td>{{stream.feeYearTwo}}</td>
+                            <td>{{stream.feeYearThree}}</td>
+                            <td>{{stream.feeYearFour}}</td>
+                            <td>{{stream.totalFee}}</td>
+                          </tr>
+                        </tbody>
+                        </table>
+                      </div>
+                    </div>
+                  </div>
+                    <!-- <div class="tab-content" *ngFor="let tab of tabs;let i = index">
+                      <div *ngIf="selectedtab === tabs[i]" role="tabpanel" class="tab-pane active" id="{{i}}">
+                        <div class="white-box d-block info-tabs table-info">
+                          <div class="row info-header">
+                            <div class="col-3">stream</div>
+                            <div class="col">duration</div>
+                            <div class="col">semesters</div>
+                            <div class="col">intake</div>
+                            <div class="col">Year1</div>
+                            <div class="col">Year2</div>
+                            <div class="col">Year3</div>
+                            <div class="col">Year4</div>
+                            <div class="col">Total</div>
+                          </div>
+                          <div class="row info-body" *ngFor="let stream of this.courseDetails[i].streams">
+                            <div class="col-3">{{stream.name}}</div>
+                            <div class="col">{{stream.duration}}</div>
+                            <div class="col">{{stream.semester}}</div>
+                            <div class="col">{{stream.intake}}</div>
+                            <div class="col">{{stream.feeYearOne}}</div>
+                            <div class="col">{{stream.feeYearTwo}}</div>
+                            <div class="col">{{stream.feeYearThree}}</div>
+                            <div class="col">{{stream.feeYearFour}}</div>
+                            <div class="col">{{stream.totalFee}}</div>
+                          </div>
+                        </div>
+                        <div class="white-box info-tabs col-12 d-block"
+                          *ngFor="let stream of this.courseDetails[i].streams">
+  
+                          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                              <thead>
+                                <tr>
+                                  <th>stream</th>
+                                  <th>duration</th>
+                                  <th>semesters</th>
+                                  <th>intake</th>
+                                </tr>
+                              </thead>
+                              <tbody>
+                
+                                <tr>
+                                  <td>{{stream.name}}</td>
+                                  <td>{{stream.duration}}</td>
+                                  <td>{{stream.semester}}</td>
+                                  <td>{{stream.intake}}</td>
+                                </tr>
+                
+                              </tbody>
+                            </table>
+                            <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                                <thead>
+                                  <tr>
+                                    <th>Year1</th>
+                                    <th>Year2</th>
+                                    <th>Year3</th>
+                                    <th>Year4</th>
+                                    <th>Total</th>
+                                  </tr>
+                                </thead>
+                                <tbody>
+                                  <tr>
+                                    <td>{{stream.feeYearOne}}</td>
+                                    <td>{{stream.feeYearTwo}}</td>
+                                    <td>{{stream.feeYearThree}}</td>
+                                    <td>{{stream.feeYearFour}}</td>
+                                    <td>{{stream.totalFee}}</td>
+                                  </tr>
+                  
+                                </tbody>
+                              </table>
+  
+  
+  
+                        </div>
+  
+  
+  
+                      </div>
+  
+  
+  
+  
+  
+  
+  
+  
+                    </div> -->
+                  </div>
+                  </div>
+            
+<!-- 
+            <ul class="nav nav-tabs side_nav" role="tablist">
+              <li *ngFor="let tab of admtabs; let first = first;" [ngClass]="{firstItem: first}" role="presentation"
+                class="accounts_li" [class.active]="selectedadmtab === tab">
+                <a (click)="selectedadmtab = tab" aria-controls="0" role="tab" data-toggle="tab">{{tab}}</a>
+              </li>
+            </ul> -->
+
+
+            <!-- <div class="tab-content" *ngFor="let tab of admtabs; let i = 'index'">
+              <div *ngIf="selectedadmtab === tabs[i]" role="tabpanel" class="tab-pane active" id="{{i}}">
+
+                <div class="white-box info-tabs col-12 d-block" *ngFor="let admDetail of this.admExamDetails">
+
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table row-no-margin">
+                    <thead>
+                      <tr>
+                        <th>Entrance Name</th>
+                        <th>Application Start Date</th>
+                        <th>Application End Date</th>
+                        <th>Exam Date</th>
+                      </tr>
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <td>{{admDetail.examination}}</td>
+                        <td>{{admDetail.startDate}}</td>
+                        <td>{{admDetail.endDate}}</td>
+                        <td>-</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+
+                  <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                    <tbody>
+                      <tr>
+                        <th>stream</th>
+                        <td>cse</td>
+                        <td>civil</td>
+                        <td>csit</td>
+                        <td>ece</td>
+                        <td>eee</td>
+                        <td>mechanical</td>
+                      </tr>
+                      <tr>
+                        <th>eligibility criteria</th>
+                        <td colspan="6" class="textContent">
+                          {{admDetail.eligibility}}</td>
+                      </tr>
+                    </tbody>
+                  </table>
+
+                  <div class="content white-box mid-links-container">
+                    <div class="title">
+                      <span>Selection Procedure</span>
+                    </div>
+                    <div class="content-text">
+                      <p>{{admDetail.selection}}</p>
+                    </div>
+                  </div>
+
+                  <div class="content white-box mid-links-container">
+                    <div class="title">
+                      <span>Key points to be noted</span>
+                    </div>
+                    <div class="content-text ">
+                      <ul>
+                        <li>{{admDetail.keyPoints}}</li>
+                      </ul>
+                    </div>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div> -->
+
+
+          </div>
+          <!-- Admission Tab panes -->
+
+          <!-- Placements Tab panes -->
+          <div class="tab-pane" id="category4" role="tabpanel" aria-labelledby="category4-tab">
+
+            <div class="content white-box mid-links-container">
+              <div class="title">
+                <span>Frequently Visited Companies</span>
+              </div>
+              <div class="content-text">
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-bordered row-no-margin">
+                  <thead>
+                    <tr>
+                      <!--   <th>Year</th>
+        <th>Company Logo</th> -->
+                      <th>Company Name</th>
+                      <th>Average Package</th>
+                      <th>Highest Package</th>
+                      <!--   <th>Student Placed</th>
+        <th>Course</th></tr> -->
+                  </thead>
+                  <tbody>
+                    <tr>
+                      <!--  <td>2013</td> -->
+                      <!--   <td>{{this.universityData.placement.company}}</td> -->
+                      <td>{{this.universityData.placement.company}}</td>
+                      <td>{{this.universityData.placement.avgPackage}}</td>
+                      <td>{{this.universityData.placement.highPackage}}</td>
+                      <!--       <td>-</td>
+            <td>BE/BTECH</td> -->
+                    </tr>
+
+                  </tbody>
+                </table>
+              </div>
+            </div>
+
+          </div>
+          <!-- Placements Tab panes -->
+
+          <!-- Faculty Tab panes -->
+
+          <div class="tab-pane" id="category5" role="tabpanel" aria-labelledby="category5-tab">
+
+
+            <div class="content white-box  mid-links-container">
+              <div class="title">
+                <span>Faculty Details</span>
+              </div>
+              <div class="content-text faculty-container d-flex">
+
+                <div *ngFor="let faculty of facultyDetails" class="col-6">
+
+                  <div class="review-container white-box bl4">
+
+                    <div class="review-user-details">
+                      <div class="review-profile-container">
+                        <div class="reviewer-profile">
+                          <span>{{this.facultyTitle}}</span>
+                        </div>
+                        <div class="reviewer-details">
+                          <p>{{faculty.name}} | <span> {{faculty.qualification}} </span></p>
+                          <p>Exp: <span>{{faculty.experience}}</span> | Dept: <span>{{faculty.dept}}</span></p>
+                        </div>
+                      </div>
+
+                    </div>
+                  </div>
+
+
+                </div>
+
+              </div>
+            </div>
+
+          </div>
+          <!-- Faculty Tab panes -->
+
+
+          <!-- Scholorship Tab panes -->
+          <div class="tab-pane" id="category6" role="tabpanel" aria-labelledby="category6-tab">
+            <div class="content white-box mid-links-container">
+              <div class="title">
+                <span>Scholarship</span>
+              </div>
+              <div class="content-text faculty-container">
+                <!-- <ul>
+                  <li>1. {{scholarshipDets.scholarship}}</li>
+                  <li>2. {{scholarshipDets.scholarshipReq}}</li>
+                  <li>3. {{scholarshipDets.detailsScholarship}}</li>
+                </ul> -->
+                <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table table-bordered row-no-margin">
+                    <thead>
+                      <tr>
+                        <!--   <th>Year</th>
+          <th>Company Logo</th> -->
+                        <th>Name of Scholorship</th>
+                        <th>Scholorship Requirements</th>
+                        <th>Details of Scholorship</th>
+                        <!--   <th>Student Placed</th>
+          <th>Course</th></tr> -->
+                    </thead>
+                    <tbody>
+                      <tr>
+                        <!--  <td>2013</td> -->
+                        <!--   <td>{{this.universityData.placement.company}}</td> -->
+                        <td>{{scholarshipDets.scholarship}}</td>
+                        <td>{{scholarshipDets.scholarshipReq}}</td>
+                        <td> {{scholarshipDets.detailsScholarship}}</td>
+                        <!--       <td>-</td>
+              <td>BE/BTECH</td> -->
+                      </tr>
+  
+                    </tbody>
+                  </table>
+              </div>
+            </div>
+          </div>
+          <!-- Scholorship Tab panes -->
+
+          <!-- Reviews Tab panes -->
+          <div class="tab-pane" id="category7" role="tabpanel" aria-labelledby="category7-tab">
+            <div class="content white-box mid-links-container">
+              <div class="title">
+                <span>Student Reviews</span>
+              </div>
+              <div class="content-text">
+                <div class="container">
+                  <div class="Row">
+                    <div class="col-md-12">
+                <div class="review-container bl4 white-box">
+                  <div class="review-title">SKU over all review</div>
+                  <div class="review-user-details">
+                    <div class="review-profile-container">
+                      <div class="reviewer-profile">
+                        <span>S</span>
+                      </div>
+                      <div class="reviewer-details">
+                        <p>Posted on Feb 25, 2018 by <span>Suhasini</span></p>
+                        <p>Batch of 2018 | <span>B.Tech Civil Engineering</span></p>
+                      </div>
+                    </div>
+                    <div class="reviewer-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-12">
+                <div class="review-container bl4 white-box">
+                  <div class="review-title">SKU over all review</div>
+                  <div class="review-user-details">
+                    <div class="review-profile-container">
+                      <div class="reviewer-profile">
+                        <span>M</span>
+                      </div>
+                      <div class="reviewer-details">
+                        <p>Posted on Feb 25, 2018 by <span>Mateen</span></p>
+                        <p>Batch of 2018 | <span>B.Tech Civil Engineering</span></p>
+                      </div>
+                    </div>
+                    <div class="reviewer-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="review-container bl4 white-box">
+                  <div class="review-title">SKU over all review</div>
+                  <div class="review-user-details">
+                    <div class="review-profile-container">
+                      <div class="reviewer-profile">
+                        <span>A</span>
+                      </div>
+                      <div class="reviewer-details">
+                        <p>Posted on Feb 25, 2018 by <span>Arun Kumar</span></p>
+                        <p>Batch of 2018 | <span>B.Tech Civil Engineering</span></p>
+                      </div>
+                    </div>
+                    <div class="reviewer-content">
+                      <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                        type and
+                        scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                        leap
+                        into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s
+                        with the
+                        release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                        publishing
+                        software like Aldus PageMaker including versions of Lorem Ipsum.</p>
+                    </div>
+                  </div>
+                </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          </div>
+        </div>
+          <!-- Reviews Tab panes -->
+
+
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

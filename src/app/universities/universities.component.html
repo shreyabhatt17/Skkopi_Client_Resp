@@ -1,0 +1,198 @@
+<div class="main-content">
+ <div class="select"  id="myHeader">
+
+    <div class="container">
+      <div class="row">
+        <div class="select-block-inner">
+          <div class="row">
+        <div class="col-md-3 col-sm-3">
+          <div class="select-input">
+            <select type="select" placeholder="select state" class="form-control">
+              <option>Select State</option>
+              <option>Telengana</option>
+              <option>Delhi</option>
+              <option>uttar Pradesh</option>
+              <option>Arunanchal Pradesh</option>
+            
+              </select>
+        </div>
+      </div>
+      <div class="col-md-3 col-sm-3">
+          <div class="select-input">
+              <select type="select" placeholder="select state" class="form-control">
+                <option>Select city</option>
+                <option>Hyderabad</option>
+                <option>varanasi</option>
+                <option>chennai</option>
+                <OPTION>thiruvananthapuram BBBBBBB</OPTION>
+                </select>
+          </div>
+      </div>
+
+      <div class="col-md-3 col-sm-3">
+          <div class="select-btn">
+           <button type="submit" class="btn btn-primary">submit</button>
+        </div>
+      </div>
+    </div>
+  </div>
+    </div>
+  </div>
+
+</div>
+<div class="content">
+  <div class="container">
+<div class="row">
+
+ <!-- <owl-carousel [options]="carouselOptions" [items]="images" [carouselClasses]="['owl-theme', 'row', 'sliding']">
+        <div class="item" *ngFor="let image of images;let i= index">
+          <img class="slide-image" src="{{image.image}}" >
+          <div class="slide-text">
+            <h4>{{image.text}}</h4>
+          </div>
+        </div>
+      </owl-carousel>  -->
+    <h5>{{title}}</h5>
+  
+    <div class="topCategoryLinks">
+      <ul>
+        <marquee scrolldelay="500">
+        <li *ngFor="let topCategoryLinkList of topCategoryLinks">{{ topCategoryLinkList.link }}</li>
+      </marquee>
+      </ul>
+    </div>
+  
+  
+    <div class="card-lists">
+  
+      <div class="card col col-lg-3" (click)="viewDetail(universitiesList.stateCode)" routerLinkActive="active"
+        *ngFor="let universitiesList of univeristyData">
+  
+        <img src="assets/images/state-icons/grey/{{ universitiesList.stateCode }}-icon.png"
+          alt="{{ universitiesList.stateName }}" class="img-responsive" style="max-height: 50px;">
+  
+        <div class="card-body col-no-padding">
+          <h6 class="card-title">{{ universitiesList.stateName }} <a routerLink="/state-universities"
+              class="btn btn-primary">{{ universitiesList.count }}</a></h6>
+        </div>
+      </div>
+  
+  
+    </div>
+  
+  
+  </div> 
+  
+  
+  <div class="premium-ads">
+    <div class="row white-box premium-ad1">
+      <img src="../../assets//images/sliderbanners/pp2.png" alt="Premiun Ad1">
+    </div>
+    <div class="row white-box white-second-box col-no-padding">
+      <div class="row white-box premium-ad2 col-sm">
+        <img src="../../assets//images/sliderbanners/pp1.png" alt="Premiun Ad2">
+      </div>
+      <div class="row white-box premium-ad3 col-sm">
+        <img src="../../assets//images/sliderbanners/pp3.png" alt="Premiun Ad3">
+      </div>
+    </div>
+  </div> 
+</div>
+</div>
+</div>
+
+  <!-- <div class="university-block">
+      <div class="container">
+          <div class="row">
+              <div class="col-md-12 col-sm-12">
+                  <div class="university-title">
+                      <h2>List of Top management of Colleges in all over India </h2>
+                  </div>
+                  <div class="breadcrumb"><a href="https://gardening.dttheme.com/">Home</a><span class="fa default"></span><span class="current">Why Us</span></div>
+              </div>
+          </div>
+      </div>
+
+  </div>
+  <div class="university-block-all">
+      <div class="container-fluid">
+          <div class="row">
+              <div class="col-md-3 col-sm-4 collapse d-md-flex  pt-2 min-vh-100" id="sidebar">
+                  <div class="left-side-block">
+                <ul class="nav flex-column flex-nowrap">
+                    <li class="nav-item">
+                        <a class="nav-link collapsed" href="#submenu1" data-toggle="collapse" data-target="#submenu1">Stream</a>
+                        <div class="collapse" id="submenu1" aria-expanded="false">
+                          <div class="inner-sub-block">
+                            <input type="text" name="search" placeholder="Search..">
+                          </div>
+                        </div>
+                    </li>
+                      <li class="nav-item">
+                          <a class="nav-link collapsed" href="#submenu2" data-toggle="collapse" data-target="#submenu2">State</a>
+                          <div class="collapse" id="submenu2" aria-expanded="false">
+                              <div class="inner-sub-block">
+                                  <input type="text" name="search" placeholder="Search..">
+                                </div>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link collapsed" href="#submenu3" data-toggle="collapse" data-target="#submenu3">City</a>
+                          <div class="collapse" id="submenu3" aria-expanded="false">
+                              <div class="inner-sub-block">
+                                  <input type="text" name="search" placeholder="Search..">
+                                </div>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link collapsed" href="#submenu4" data-toggle="collapse" data-target="#submenu4">Entrance/Exam Accepted</a>
+                          <div class="collapse" id="submenu4" aria-expanded="false">
+                              <div class="inner-sub-block">
+                                  <input type="text" name="search" placeholder="Search..">
+                                </div>
+                          </div>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link collapsed" href="#submenu5" data-toggle="collapse" data-target="#submenu5">Course Type</a>
+                          <div class="collapse" id="submenu5" aria-expanded="false">
+                              <div class="inner-sub-block">
+                                  <input type="text" name="search" placeholder="Search..">
+                                </div>
+                          </div>
+                      </li>
+                      
+                  </ul>
+                </div>
+              </div>
+              <div class="col md-9 col-sm-8">
+            <div class="listing_tags college_listing_tags">
+              <a href="#" class="tag single_filter">
+                  Science
+                  <span>(859)</span>  
+              </a>
+              <a href="#" class="tag single_filter">
+                  Science
+                  <span>(859)</span>  
+              </a>
+            </div>
+          <div class="row">
+            <div class="col-md-4 col-sm-4">
+   <div class="university-blog">
+    
+    <img src="../../assets/images/Amity_University_Lucknow_Campus.png" class="img-responsive">
+<div class="university-content">
+  <h3>Amity University, Mumbai</h3>
+  <span class="divider"></span>
+</div>
+    
+   </div>
+            </div>
+            <div class="col-md-4 col-sm-4">
+               
+              </div>
+          </div>
+              </div>
+          </div>
+      </div>
+    
+  </div> -->

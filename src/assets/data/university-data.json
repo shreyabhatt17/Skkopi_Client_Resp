@@ -1,0 +1,150 @@
+
+{
+  "basicInfo": {
+    "name": "JNTU Kakinada",
+    "establishedYear": null,
+    "institutionType": "College",
+    "category": {
+      "_id": "2",
+      "name": "Private"
+    },
+    "website": "www.aucet.com",
+    "email": "princi@aucet.com",
+    "overview": "This college has a very beautiful campus",
+    "landPhoneNumber": null,
+    "phone": "4023376045",
+    "phoneExt": "",
+    "fax": "4023376045",
+    "faxExt": ""
+  },
+  "facilities": {
+    "library": true,
+    "labs": true,
+    "cafe": "yes",
+    "seminarHall": "yes",
+    "auditorium": "yes",
+    "playground": "yes",
+    "hostel": "yes",
+    "parkingFacility": "yes",
+    "firstAid": "yes",
+    "cctv": "no",
+    "busStation": "yes",
+    "railStation": "yes",
+    "airport": "no",
+    "transport": "yes"
+  },
+  "address": {
+    "area": "5 acres",
+    "locatedIn": "Anathapur",
+    "distance": "Anathapur",
+    "kilometres": "60",
+    "pin": "500018",
+    "town": "Anathapur",
+    "district": "Medchal",
+    "city": "Anathapur",
+    "state": "AP",
+    "country": "India"
+  },
+  "coursesDetails": {
+    "courses": [
+      {
+	    "_id":"1",
+        "degree": "Engineering",
+        "streams": [
+        {
+			"_id":"8",  
+			"name": "Electronics and Communication Engineering(ECE)"
+			"semester": "8",
+			"duration": "4",
+			"feeYearOne": "15000",
+			"feeYearTwo": "15000",
+			"feeYearThree": "15000",
+			"feeYearFour": "15000",
+			"totalFee": "60000",
+			"intake": "60"
+		},
+		{
+		    "_id":"9",  
+			"name": "Computer Science Engineering(CSE)"
+			"semester": "8",
+			"duration": "4",
+			"feeYearOne": "15000",
+			"feeYearTwo": "15000",
+			"feeYearThree": "15000",
+			"feeYearFour": "15000",
+			"totalFee": "60000",
+			"intake": "60"
+		}
+     ]
+	 },
+	   {
+	    "_id":"2",
+        "degree": "BSC",
+        "streams": [
+        {
+			"_id":"10",  
+			"name": "Bachloer of Science(B.Sc)"
+			"semester": "8",
+			"duration": "4",
+			"feeYearOne": "15000",
+			"feeYearTwo": "15000",
+			"feeYearThree": "15000",
+			"feeYearFour": "15000",
+			"totalFee": "60000",
+			"intake": "60"
+		},
+		{
+		    "_id":"11",  
+			"name": "Bachloer of Commerce(B.Com)"
+			"semester": "8",
+			"duration": "4",
+			"feeYearOne": "15000",
+			"feeYearTwo": "15000",
+			"feeYearThree": "15000",
+			"feeYearFour": "15000",
+			"totalFee": "60000",
+			"intake": "60"
+		}
+     ]
+	 }
+   ]   
+  },
+  "admissionDetails": {
+    "exams": [
+      {
+        "examination": "EAMCET",
+        "startDate": null,
+        "endDate": null
+      }
+    ],
+    "eligibility": "Intemediate passed",
+    "selection": "Eamcet qualified",
+    "keyPoints": "Will discuss later",
+    "coEducation": "yes",
+    "passPercent": "60",
+    "medium": "english",
+    "cQuota": "80",
+    "mQuota": "15",
+    "nriQuota": "05"
+  },
+  "placement": {
+    "company": "MCS",
+    "avgPackage": "5.5 lacs",
+    "highPackage": "7.5 lacs"
+  },
+  "scholarshipDetails": {
+    "scholarship": "will discuss later",
+    "scholarshipReq": "will discuss later",
+    "detailsScholarship": "will discuss later"
+  },
+  "facultyDetails": {
+    "faculty": [
+      {
+        "name": "Zabi",
+        "dept": "HOD",
+        "qualification": "B.Tech",
+        "experience": "12 yrs"
+      }
+    ]
+  } 
+}

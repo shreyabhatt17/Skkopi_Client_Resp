@@ -1,0 +1,19 @@
+/**************************** box shadow ****************************/
+
+%box-shadow {
+	-webkit-box-shadow: 0px 4px 5px -6px rgba(0, 0, 0, 0.75);
+	-moz-box-shadow: 0px 4px 5px -6px rgba(0, 0, 0, 0.75);
+	-ms-box-shadow: 0px 4px 5px -6px rgba(0, 0, 0, 0.75);
+	-o-box-shadow: 0px 4px 5px -6px rgba(0, 0, 0, 0.75);
+	box-shadow: 0px 4px 5px -6px rgba(0, 0, 0, 0.75);
+}
+
+%gradient{
+	background: $gradient1-color;
+	background: -moz-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+	background: -webkit-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+	background: linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+	filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$gradient1-color",endColorstr="$gradient2-color",GradientType=1);
+}
+
+/**************************** box shadow ****************************/

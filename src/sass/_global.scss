@@ -1,0 +1,9 @@
+body{ 
+     background: $primary-color;
+     font-family: $font-family;
+     font-size: $default-fontsize;
+}
+
+.col-no-padding{ padding:0 !important;}
+
+.row-no-margin{ margin:0 !important;}

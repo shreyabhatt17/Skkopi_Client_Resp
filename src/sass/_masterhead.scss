@@ -1,0 +1,57 @@
+// .header-bg{
+// // background: $gradient1-color;
+// background: -moz-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+// background: -webkit-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+// background: linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+// filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$gradient1-color",endColorstr="$gradient2-color",GradientType=1);
+// }
+.header-bg{
+    // background: $gradient1-color;
+    background: -moz-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+    background: -webkit-linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+    background: linear-gradient(90deg, $gradient1-color 0%, $gradient2-color 100%);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="$gradient1-color",endColorstr="$gradient2-color",GradientType=1);
+    }
+
+.main-navigation{ background: rgba(256,256,256,.1); @extend %box-shadow;}
+
+.form-inline button{ margin:0px 5px;}
+
+.main-navigation nav a{ color:#103677; text-transform:capitalize; font-size:0.8em; font-weight:600; text-transform:uppercase;}
+
+// .main-navigation{
+// nav a:hover,
+// nav a.active,
+// nav a:focus,
+// nav a:visited{ color:$link-color; 
+// background:$navlink-hover-bg;}
+// }
+
+.fa{ font-size:1.5em;}
+
+.btn-outline-primary{
+	color: #fff;
+    background-color: #2abbf1;
+
+}
+
+.btn-outline-primary:hover{
+	color: #ffff;
+    background-color: transparent;
+    border-color: #fff;
+}
+
+.btn-outline-success {
+    color: #fff;
+    background-color: #28a745;
+    border-color: #28a745;
+}
+
+.btn-outline-success:hover {
+    color: #fff;
+    background-color:  transparent;
+    border-color: #fff;
+}
+
+
+

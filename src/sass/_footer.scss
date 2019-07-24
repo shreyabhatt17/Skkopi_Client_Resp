@@ -1,0 +1,28 @@
+footer{background: #243b55; padding:20px 0px 0;}
+
+footer ul{ padding:0;}
+
+footer ul li{ list-style:none; }
+
+footer ul li a{ color:#fff; font-size:0.8em; text-transform:uppercase; word-break: break-word;}
+
+footer p{
+    background:#141e30;
+    margin: 0;
+    line-height: 30px;
+    text-align: center;    
+    color: #fff;
+    font-size: 0.8em;
+}
+
+.footer-links{
+	display:flex;
+	flex-direction:row;
+	justify-content:space-between
+}
+
+.footer-links h3{ font-size:1.2em; color:#fff;}
+
+.footer-state-links ul{ display:flex; flex-flow: wrap; }
+
+.footer-state-links ul li{ margin-right:10px; width:140px;}
