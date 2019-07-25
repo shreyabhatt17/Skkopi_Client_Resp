@@ -15,7 +15,9 @@
         <img [src]="this.universityData.logo.url" alt="{{this.universityData.basicInfo.name}}" class="img-responsive">
         <div class="college-info">
           <div class="college-details">
-            <h3>{{this.universityData.basicInfo.name}}</h3>
+            <h1>{{this.universityData.basicInfo.name}} 
+
+            </h1>
           </div>
           <div class="college-address">
             <h6>{{this.universityData.address.city}}</h6>
@@ -39,7 +41,7 @@
       </li>
       <li class="nav-item">
         <a class="nav-link" id="category2-tab" data-toggle="tab" href="#category2" role="tab" aria-controls="category2"
-          aria-selected="false">Course Fee</a>
+          aria-selected="false">Courses & Fee</a>
       </li>
       <li class="nav-item">
         <a class="nav-link" id="category3-tab" data-toggle="tab" href="#category3" role="tab" aria-controls="category3"
@@ -76,20 +78,17 @@
           <!-- info Tab panes -->
           <div class="tab-pane active" id="category1" role="tabpanel" aria-labelledby="category1-tab">
 
-            <div class="about-container white-box" style="justify-content: left;">
-              <p>In the early 1920s, to serve the downtrodden and to promote Tamil Literature, Rajah Sir S. R. M.
-                Annamalai Chettiar founded Sri Minakshi College, Sri Minakshi Tamil College and Sri Minakshi Sanskrit
-                College in a rural setup at Chidambaram. In 1928, Rajah Sir S. R. M. Annamalai Chettiar agreed with the
-                local Government to handover the above said institution for establishing a University. Thus, on
-                01.01.1929 Annamalai University was established as per Annamalai University Act 1928 (Tamil Nadu Act 1
-                of 1929).</p>
+            <div class="about-container abt-heading white-box" style="justify-content: left;">
+
+              <h3>About {{this.universityData.basicInfo.name}} :</h3>
+              <p>{{this.basicInform.overview}}</p>
             </div>
 
             <div class="affiliated-links white-box mid-links-container">
               <span class="flag-first">explore affilate colleges</span>
 
               <a *ngFor="let affiliatedCollege of this.affiliatedColleges">
-                <span>Annamacharya college of Engineering</span>
+                <span><a href="#">{{affiliatedCollege.name}}</a></span>
               </a>
 
             </div>
@@ -101,51 +100,11 @@
 
               <ul>
                 <li>
-                  <a>
-                    <span><i class="fa fa-hotel"></i> Hostel</span>
+                  <a *ngFor="let facility of this.facilitiesDetails | keyvalue">
+                    <span *ngIf="facility.value">{{facility.key}}</span>
                   </a>
                 </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-users"></i> Faculty</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-briefcase "></i> Placements</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-hotel"></i> Hostel</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-users"></i> Faculty</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-briefcase "></i> Placements</span>
-                  </a>
-                </li>
-                <li>
-                  <a>
-                    <span><i class="fa fa-graduation-cap"></i> Multiple Courses</span>
-                  </a>
-                </li>
-
+         
               </ul>
 
             </div>
@@ -156,21 +115,12 @@
               </div>
 
               <div class="row">
-                <div class="col-md-4 col-sm-4">
+                <div class="col-md-4 col-sm-4"  *ngFor="let galleryimage of this.galleries" >
                   <div class="glry-img-block">
-                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
+                    <img [src]="galleryimage.url" class="img-responsive img-rounded" alt="{{galleryimage.fileName}}"  width="200" height="150">
                   </div>
                 </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="glry-img-block">
-                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
-                  </div>
-                </div>
-                <div class="col-md-4 col-sm-4">
-                  <div class="glry-img-block">
-                    <img src="../../../../assets/images/gl-1.jpg" class="img-responsive img-round">
-                  </div>
-                </div>
+               
               </div>
 
             </div>
@@ -228,76 +178,24 @@
                   </ul>
                 </div>
                 <div class="col-md-9 col-sm-8">
-                  <div class="table-block">
-                  <div class="tab-content" *ngFor="let tab of tabs;let i = index">
-                    <div class="table table-responsive">
-                      <table class="table-bordered">
-                        <thead *ngIf="selectedtab === tabs[i]" role="tabpanel" id="{{i}}">
-                        <tr>
-                          <th>Stream</th>
-                          <th>Duration</th>
-                          <th>Semesters</th>
-                          <th>intake</th>
-                          <th>Year1</th>
-                          <th>Year2</th>
-                          <th>Year3</th>
-                          <th>Year4</th>
-                          <th>Total</th>
-                        </tr>
-                      </thead>
-                      <tbody *ngFor="let stream of this.courseDetails[i].streams">
-                        <tr>
-                          <td>{{stream.name}}</td>
-                          <td>{{stream.duration}}</td>
-                          <td>{{stream.semester}}</td>
-                          <td>{{stream.intake}}</td>
-                          <td>{{stream.feeYearOne}}</td>
-                          <td>{{stream.feeYearTwo}}</td>
-                          <td>{{stream.feeYearThree}}</td>
-                          <td>{{stream.feeYearFour}}</td>
-                          <td>{{stream.totalFee}}</td>
-                        </tr>
-                      </tbody>
-                      </table>
-                    </div>
-                  </div>
-                </div>
-                  <!-- <div class="tab-content" *ngFor="let tab of tabs;let i = index">
+                  
+                <div class="tab-content" *ngFor="let tab of tabs;let i = index">
                     <div *ngIf="selectedtab === tabs[i]" role="tabpanel" class="tab-pane active" id="{{i}}">
-                      <div class="white-box d-block info-tabs table-info">
-                        <div class="row info-header">
-                          <div class="col-3">stream</div>
-                          <div class="col">duration</div>
-                          <div class="col">semesters</div>
-                          <div class="col">intake</div>
-                          <div class="col">Year1</div>
-                          <div class="col">Year2</div>
-                          <div class="col">Year3</div>
-                          <div class="col">Year4</div>
-                          <div class="col">Total</div>
-                        </div>
-                        <div class="row info-body" *ngFor="let stream of this.courseDetails[i].streams">
-                          <div class="col-3">{{stream.name}}</div>
-                          <div class="col">{{stream.duration}}</div>
-                          <div class="col">{{stream.semester}}</div>
-                          <div class="col">{{stream.intake}}</div>
-                          <div class="col">{{stream.feeYearOne}}</div>
-                          <div class="col">{{stream.feeYearTwo}}</div>
-                          <div class="col">{{stream.feeYearThree}}</div>
-                          <div class="col">{{stream.feeYearFour}}</div>
-                          <div class="col">{{stream.totalFee}}</div>
-                        </div>
-                      </div>
-                      <div class="white-box info-tabs col-12 d-block"
-                        *ngFor="let stream of this.courseDetails[i].streams">
-
-                        <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
+                      
+                      <div class="white-box info-tabs col-12 d-block" *ngFor="let stream of this.courseDetails[i].streams">
+                     <div class="table-bl">
+                        <table cellpadding="0" cellspacing="0" border="1" width="100%" class="table table-responsive">
                             <thead>
                               <tr>
                                 <th>stream</th>
                                 <th>duration</th>
                                 <th>semesters</th>
                                 <th>intake</th>
+                                <th>Year1</th>
+                                  <th>Year2</th>
+                                  <th>Year3</th>
+                                  <th>Year4</th>
+                                  <th>Total</th>
                               </tr>
                             </thead>
                             <tbody>
@@ -307,48 +205,20 @@
                                 <td>{{stream.duration}}</td>
                                 <td>{{stream.semester}}</td>
                                 <td>{{stream.intake}}</td>
+                                <td>{{stream.feeYearOne}}</td>
+                                <td>{{stream.feeYearTwo}}</td>
+                                <td>{{stream.feeYearThree}}</td>
+                                <td>{{stream.feeYearFour}}</td>
+                                <td>{{stream.totalFee}}</td>
                               </tr>
               
                             </tbody>
                           </table>
-                          <table cellpadding="0" cellspacing="0" border="0" width="100%" class="table">
-                              <thead>
-                                <tr>
-                                  <th>Year1</th>
-                                  <th>Year2</th>
-                                  <th>Year3</th>
-                                  <th>Year4</th>
-                                  <th>Total</th>
-                                </tr>
-                              </thead>
-                              <tbody>
-                                <tr>
-                                  <td>{{stream.feeYearOne}}</td>
-                                  <td>{{stream.feeYearTwo}}</td>
-                                  <td>{{stream.feeYearThree}}</td>
-                                  <td>{{stream.feeYearFour}}</td>
-                                  <td>{{stream.totalFee}}</td>
-                                </tr>
-                
-                              </tbody>
-                            </table>
-
-
-
+                        </div>
+      
                       </div>
-
-
-
                     </div>
-
-
-
-
-
-
-
-
-                  </div> -->
+                  </div> 
                 </div>
                 </div>
               </div>

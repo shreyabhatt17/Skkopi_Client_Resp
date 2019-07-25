@@ -1,0 +1,217 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans&display=swap');
+
+.main-content{
+width:100%;
+float:left;
+padding-top:0px;
+background:#fff;
+}
+
+
+.university-block{
+    width:100%;
+    float:left;
+    background:url('../../assets/images/campus.jpg');
+    padding:50px 0px;
+    background-size:cover;
+    background-position: center;
+    position: relative;
+
+
+}
+.university-block:before {
+    content: "";
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(to right, rgba(17,49,111,1) 45%,rgba(17,49,51,0) 70%);
+}
+.university-title h2{
+    font-weight:bold;
+    font-family: 'Poppins', sans-serif;
+    font-size:18px;
+    color:#fff;
+
+}
+.breadcrumb {
+    clear: both;
+    float: left;
+    width: 100%;
+    margin: 0px;
+    padding: 0px;
+    font-size: 13px;
+    font-weight: 500;
+    color: rgba(0, 0, 0, 0.6);
+    background:transparent;
+}
+.university-block .breadcrumb {
+    color: rgba(255, 255, 255, 0.6);
+    font-family: 'Poppins', sans-serif;
+}
+.university-block .breadcrumb a {
+    color: #ffffff;
+    font-family: 'Poppins', sans-serif;
+}
+.university-block .fa.default {
+    display: inline-block;
+    height: 14px;
+    width: 1px;
+    -webkit-transform: rotate(30deg);
+    -moz-transform-origin: 0 0;
+    -moz-transform: rotate(30deg);
+    -ms-transform-origin: 0 0;
+    -ms-transform: rotate(30deg);
+    transform-origin: 0 0;
+    transform: rotate(30deg);
+    background: #000000;
+    top: 3px;
+    position: relative;
+    margin: 0px 5px 0px 10px;
+ 
+}
+.university-block .breadcrumb .fa.default {
+    background: #ffffff;
+}
+
+.exam-block{
+width:100%;
+float:left;
+margin-top:35px;
+}
+
+.tab-block{
+width:100%;
+float:left;
+margin:0px auto;
+
+}
+.tab-block ul{
+    padding:0px;
+    margin:0px;
+}
+.nav-tabs li a{
+    padding:10px 12px;
+    height:auto;
+    font-family: 'Poppins', sans-serif;
+}
+
+.category nav a{
+    color:#18426b;
+    font-family: 'Poppins', sans-serif;
+
+}
+#tabs{
+	background: #f2f2f2;
+    color: #222;
+}
+ h6.section-title{
+    color: #222;
+}
+
+ .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    color: #222;
+    background-color: transparent;
+    border-color: transparent transparent #222;
+    border-bottom: 4px solid !important;
+    font-size: 20px;
+    font-weight: bold;
+}
+ .nav-tabs .nav-link {
+    border: 1px solid transparent;
+    border-top-left-radius: .25rem;
+    border-top-right-radius: .25rem;
+    color: #11316f;
+    font-size: 15px;
+    font-family: 'Poppins', sans-serif;
+}
+
+.whole-main{
+width:100%;float:left;
+
+}
+
+.entrance{
+width:100%;
+float:left;
+}
+
+
+.entrance-block{
+    border:1px solid #ccc;
+    border-radius:9px;
+    margin-bottom:20px;
+
+
+}
+
+.et-bl p{
+    font-family: 'Open Sans', sans-serif;
+    font-size:13px;
+    margin-bottom:10px; 
+}
+.et-bl .ft-b{
+    font-weight:bold;
+    font-family: 'Open Sans', sans-serif;
+font-size:11px;
+    color:#6d6d6d;
+
+}
+.et-bl a{
+    color:#6d6d6d;   
+}
+.et-bl a:hover{
+    text-decoration:none;
+}
+.br-1{
+border-right:1px solid #ccc;
+padding:15px 10px;
+}
+.le-1{
+    padding:15px 10px;
+}
+.img-sec{
+    text-align:center;
+}
+
+.img-sec h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight:bold;
+    font-size:18px;
+    margin-top:18px;
+}
+.bl-h a{
+    color:#e2000f;
+    font-weight:bold;
+}
+
+.img-sec img{
+width:100px;
+height:100px;
+}
+.et-bl {
+    padding: 0px 25px;
+}
+
+.entrance-block:hover {
+    background-image: linear-gradient(to left bottom, #006ea6, #005e99, #024f8c, #0a407e, #11316f);
+color:#fff;
+    -webkit-transform: scale(1.05);
+    -moz-transform: scale(1.05);
+    -ms-transform: scale(1.05);
+    -o-transform: scale(1.05);
+    transform: scale(1.05);
+    z-index: 99;
+    -webkit-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    -ms-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    transition: all .25s ease;
+}
+.entrance-block:hover a{
+    color:#fff;
+}
+.entrance-block:hover .ft-b{
+color:#fff;
+}

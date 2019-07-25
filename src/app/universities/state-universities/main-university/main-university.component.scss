@@ -393,3 +393,39 @@ font-family:'Poppins', sans-serif;
 .bl4{
 border:1px solid #ccc;
 }
+.table-bl{
+width:100%;
+float:left;
+}
+.table-responsive{
+    display:table;
+}
+.about-container h3{
+    font-family:'Poppins', sans-serif;
+    font-weight:bold;
+    font-size:22px;
+    color:#11316f;
+}
+.abt-heading{
+display:block;
+}
+
+.college-details h1{
+font-size:28px;
+font-family:'Poppins', sans-serif;
+font-weight:bold;
+text-transform: capitalize;
+}
+
+
+.affiliated-links a{
+    color:#11316f;
+    font-size:15px;
+}
+.affiliated-links a:hover{
+    transition: 0.3s;
+    color:#8b1205;
+}
+.glry-img-block {
+    margin-bottom: 25px;
+}

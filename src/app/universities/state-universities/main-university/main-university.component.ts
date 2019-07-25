@@ -114,7 +114,8 @@ export class MainUniversityComponent implements OnInit {
     this.universitiesService.getMainUniversityRequest(universityID).subscribe(
       mainUniversity => {
         this.mainUniversity = mainUniversity;
-        //console.log(this.mainUniversity, 'unicount');
+  
+        console.log(this.mainUniversity, 'unicount');
 
         this.universityData = this.mainUniversity.data.university;
         console.log(this.universityData, "university data id");
